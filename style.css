@@ -1,0 +1,118 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #5e5858a6;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+#navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+#welcome-section {
+  height: 100vh;
+  background: linear-gradient(to right,rgb(169, 152, 241),rgb(247, 156, 250));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding-top: 60px;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+
+#projects {
+  padding: 100px 20px 50px;
+  background-color: #d7a5eb7e;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-tile {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.project-tile img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-tile p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  
+}
+
+
+#contact {
+  padding: 50px 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+#profile-link {
+  display: inline-block;
+  background-color:rgb(112, 2, 116);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+#profile-link:hover {
+  background-color:rgb(112, 2, 116);
+}
+a{
+  text-decoration: none;
+}
+
+
+@media (max-width: 700px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
